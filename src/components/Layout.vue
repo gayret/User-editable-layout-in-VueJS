@@ -19,6 +19,10 @@ const props = defineProps({
     </main>
     <footer>
       <h2>Footer</h2>
+      <div>
+        Follow me on <a href="https://safa.medium.com">Medium</a> and
+        <a href="https://github.com/gayret/User-editable-layout-in-VueJS">Github</a>
+      </div>
     </footer>
   </div>
 </template>
@@ -39,6 +43,9 @@ main {
 footer {
   grid-area: footer;
   background-color: lightyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .layout {
